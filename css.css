@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(ecailles.png);
+    font-family: 'Lato', sans-serif;
+}
+
+#title{
+    text-align: center;
+    background-color: #f4d742;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#title h1{
+    font-size: 70px;
+}
+
+nav{
+    background-color: #f4d742;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+#wrapper > nav > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#wrapper > nav > ul > li{
+    color: black;
+    margin-right: 50px;
+    border-bottom: solid gray 1px;
+}
+
+#wrapper > nav > ul > li > a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+}
+
+a:hover{
+    color: #666;
+}
+
+.yellow{
+    text-decoration: underline;
+    text-decoration-color: #f4d742;
+}
+
+.tools{
+    border: solid white 2px;
+    background: #f4d742;
+    color: black;
+    border-radius: 9%;
+    min-width: 200px;
+}
+
+#aboutMe{
+    width: 90%;
+    text-align: left;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+#aboutMe > h1{
+    text-align: left;
+}
+
+#aboutMe p{
+    font-size: 25px;
+}
+
+
+#mySkills{
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#text{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+img{
+    width: 220px;
+    margin: 30px 30px;
+    display: flex;
+}
+
+#myProjects{
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.git_container{
+    padding: 40px;
+}
+
+.git_element{
+    border: solid black 2px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 0 40px;
+    background-image: url(img/old_moon.png);
+    min-width: 100px;
+}
+
+.git_element a{
+    text-decoration: none;
+}
+
+.git_icon{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.desc_container{    
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px 0 0 20px;
+    flex: 9;
+    border-left: solid black 2px;
+    padding-left: 40px;
+}
+
+.technologies > ul{
+    list-style-type: none;
+}
+
+.technologies > ul > li{
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+
+.contact{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #f4d742;
+    margin-bottom: 30px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid #bbb 1px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.dot_up {
+    height: 27px;
+    width: 27px;
+    background-color: limegreen;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.contact_element p, .contact_element i{
+    display: inline-block;
+    
+}
+
+.contact_element i{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #title{
+        height: 200px;
+        padding: 0 10px;
+    }
+    
+    #title > h1{
+        font-size: 40px;
+    }
+    
+    #title > p{
+        font-size: 22px;
+        padding-bottom: 28px;
+    }
+    
+    #wrapper > nav > ul > li {
+        font-size: 13px;
+        text-align: center;
+        border-bottom: none;
+    }
+    
+    nav{
+        padding: 0 10px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    
+    .yellow{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    #aboutMe{
+        width: 80%;
+    }
+    
+    #aboutMe p{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .git_container{
+        padding: 0px;
+        margin-top: 70px;
+    }
+    
+    .git_icon i{
+        display: none;
+    }
+
+
+    .desc_container{    
+    font-size: 12px;
+    }
+    
+    footer{
+        font-size: 17px;
+    }
+    
+    .contact_element{
+        font-size: 20px;
+    }
+    
+    #myProjects{
+        display: block;
+    }
+    
+    .desc_container{
+        border: none;
+    }
+}
