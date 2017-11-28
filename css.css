@@ -34,6 +34,7 @@ nav{
 #wrapper > nav > ul{
     list-style-type: none;
     display: flex;
+    color: black;
 }
 
 #wrapper > nav > ul > li{
@@ -44,6 +45,7 @@ nav{
 
 #wrapper > nav > ul > li > a{
     text-decoration: none;
+    color: black;
 }
 
 a:visited{
